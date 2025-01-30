@@ -123,15 +123,26 @@ form {
     align-items: center;
 }
 
-.guardar {
+.guardar, .actualizar {
     background-color: rgb(8, 8, 119) ;
     color: white;
-    border: 2px white solid;
-    padding: 7px;
+    border:5px white solid;
+    padding: 10px;
     border-radius: 10px;
     margin: 15px 10px 0;
 }
 
+.guardar:hover, .actualizar:hover {
+    color: rgb(8, 8, 119) ;
+    background-color: white;
+    border: 5px rgb(8, 8, 119) solid;
+}
+
 #agrerar {
     margin: 15px 0;
+}
+
+input {
+    padding: 5px 5px;
+    border-radius: 10px;
 }
