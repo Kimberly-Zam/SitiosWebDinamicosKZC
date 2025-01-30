@@ -1,0 +1,14 @@
+<%- include('layout', { body:
+    `<h2 id="agrerar">Agregar</h2>
+    <form action="/add" method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+        <label>Apellido:</label>
+        <input type="text" name="apellido" required>
+        <label>Dirección:</label>
+        <input type="text" name="direccion" required>
+        <label>Telefono:</label>
+        <input type="number" name="telefono" required>
+        <button type="submit" class="guardar">Guardar</button>
+    </form>
+`}) %>

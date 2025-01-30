@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contenedor-borde {
+    border: 3px rgb(8, 8, 119) solid;
+    padding: 15px;
+    border-radius: 15px;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inicio {
+    background-color: rgb(8, 8, 119) ;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.agenda {
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 15px;
+    width: 40%;
+    margin: 25px auto;
+    color: white;
+}
+
+.agenda:hover {
+    color: rgb(8, 8, 119);
+    background: white;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(8, 8, 119) ;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    >nav {
+        margin-top: 15px;
+    }
+}
+header a {
+    color: white;
+    border: 2px white solid;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 15px 10px;
+}
+
+header a:hover {
+    background-color: white;
+    color: rgb(8, 8, 119);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(8, 8, 119, 0.164); /* Color gris claro en filas pares */
+}
+
+tr:hover {
+    background-color: rgb(8, 8, 119);
+    color: white;
+    td a {
+        color: white;
+        border: 3px solid white;
+    }
+}
+
+td a {
+    display: flex;
+    flex-direction: column;
+}
+
+td a {
+    border: 3px solid rgb(8, 8, 119);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guardar {
+    background-color: rgb(8, 8, 119) ;
+    color: white;
+    border: 2px white solid;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 15px 10px 0;
+}
+
+#agrerar {
+    margin: 15px 0;
+}

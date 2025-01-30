@@ -1,0 +1,20 @@
+<%- include('layout', { body: `
+    <h2>Editar</h2>
+    ${agenda ? `
+        <form action="/edit/${agenda.id}" method="POST">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required value="${agenda.nombre}">
+
+            <label>Apellido:</label>
+            <input type="text" name="apellido" required value="${agenda.apellido}">
+
+            <label>Dirección:</label>
+            <input type="text" name="direccion" required value="${agenda.direccion}">
+
+            <label>Teléfono:</label>
+            <input type="number" name="telefono" required value="${agenda.telefono}">
+
+            <button type="submit">Actualizar</button>
+        </form>
+    ` : '<p>No se encontró la información para editar.</p>'}
+` }) %>
