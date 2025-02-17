@@ -1,0 +1,17 @@
+<%- include('layout', { body: null }) %>
+<h2 class="tituloCrear">Agregar Producto</h2>
+<form action="/productos/crear" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" name="precio" required>
+
+    <label for="imagen">Imagen:</label>
+    <input type="text" id="imagen" name="imagen" required>
+
+    <label for="detalle">Detalle:</label>
+    <input type="text" id="detalle" name="detalle" required>
+
+    <button type="submit">Guardar</button>
+</form>

@@ -1,0 +1,31 @@
+<%- include('layout', { body: `
+    <h2 class="tituloTabla">Lista de Productos</h2>
+    <div class="flex">
+        <a href="/productos/crear" class="registrarProductoBoton">Registrar Producto</a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+                <th>Detalle</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${productos.map(producto => `
+                <tr>
+                    <td>${producto.nombre}</td>
+                    <td>${producto.precio}</td>
+                    <td><img src="../${producto.imagen}"/></td>
+                    <td>${producto.detalle}</td>
+                    <td>
+                        <a href="/productos/editar/${producto.id}"><i class="bi bi-pencil-square"></i></a>
+                        <a href="/productos/borrar/${producto.id}"><i class="bi bi-x-square"></i></a>
+                    </td>
+                </tr>
+            `).join('')}
+        </tbody>
+    </table>
+` }) %>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Usuario</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Usuario: <%= cliente.nombres %> <%= cliente.apellidos %></h1>
+    </header>
+
+    <div class="container">
+        <div class="detalle-usuario">
+            <p><strong>CI:</strong> <%= cliente.ci %></p>
+            <p><strong>Nombres:</strong> <%= cliente.nombres %></p>
+            <p><strong>Apellidos:</strong> <%= cliente.apellidos %></p>
+            <p><strong>Celular:</strong> <%= cliente.celular %></p>
+            <p><strong>Correo:</strong> <%= cliente.correo %></p>
+        </div>
+        <a class="botonNuevo" href="/">Regresar</a>
+    </div>
+</body>
+</html>

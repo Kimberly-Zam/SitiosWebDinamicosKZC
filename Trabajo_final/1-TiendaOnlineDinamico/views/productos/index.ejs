@@ -1,0 +1,37 @@
+<%- include('layout', { body: null }) %>
+<div class="producto" data-id="producto<%= producto.id %>" style="width: 60vw; display: block; margin: auto;">
+    <div class="contenedorImg">
+        <button class="productoBtn izq"><i class="bi bi-caret-left-fill"></i></button>
+        <img src="../<%= producto.imagen %>" alt="Producto <%= producto.id %>" class="productoImg" style="height: 60vh; max-width: 95vw;">
+        <button class="productoBtn der"><i class="bi bi-caret-right-fill"></i></button>
+    </div>
+    <h3 class="prodTitulo" style="text-align: center;"><%= producto.nombre %></h3>
+    <p class="prodDescripcion"  style="text-align: center;"><%= producto.detalle %></p>
+    <p class="precio">Bs. <%= producto.precio %></p>
+    <button class="carritoBtn" style="width: 35vw;"><i class="bi bi-cart"></i></button>
+
+    <div id="modal" class="modal hidden">
+        <div class="modalContenedor">
+            <span id="cerrarModal" class="cerrar"><i class="bi bi-x-circle"></i></span>
+            <img src="" alt="Imagen ampliada" id="modalImg">
+        </div>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modalContenedor">
+            <span id="cerrarModal" class="cerrar"><i class="bi bi-x-circle"></i></span>
+            <img src="" alt="Imagen ampliada" id="modalImg">
+        </div>
+    </div>
+
+    <div id="modalCarritoP" class="modal oculto">
+        <div class="modalContenedorCarrito">
+            <p>¿Deseas añadir este producto al carrito?</p>
+            <div class="botonesModal">
+                <button id="btnSi" class="botonModal">Sí</button>
+                <button id="btnNo" class="botonModal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+

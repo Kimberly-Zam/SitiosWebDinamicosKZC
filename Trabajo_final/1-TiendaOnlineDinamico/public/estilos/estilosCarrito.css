@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.carrito a {
+    padding-right: 20px;
+    text-align: end;
+}
+
+h2 {
+    text-align: center;
+    background-color: rgba(226, 226, 226, 0.26);
+    margin: 10px 0;
+    padding: 15px 0;
+}
+
+.contenedorCarrito {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.carritoProductos {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.productoCarrito {
+    display: flex;
+    height: 150px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding: 10px 0;
+}
+
+.carritoImg {
+    width: 10vw;
+}
+
+.precio {
+    width: 40vw;
+
+}
+
+.btnEliminar {
+    width: 70px;
+    height: 40px;
+    color: red;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+}
+
+
+.sumaTotal {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+
+    p {
+        margin: 10px 0;
+    }
+}
+
+
+.pagar {
+    border-radius: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .carrito a {
+        padding-right: 0px;
+    }
+    .contenedorCarrito {
+        flex-wrap: wrap;
+    }
+    .carritoProductos {
+        width: 95vw;
+    }
+    .carritoImg {
+        width: 30vw;
+    }
+    .sumaTotal {
+        width: 35vw;
+    }
+
+}
+

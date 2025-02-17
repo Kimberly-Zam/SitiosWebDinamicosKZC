@@ -1,0 +1,81 @@
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .tituloTabla {
+        margin-top: 55px;
+    }
+}
+
+.tituloTabla {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.registrarProductoBoton {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 15vw;
+    text-align: center;
+    margin-right: 5vw;
+}
+
+table {
+    margin: 10px auto 50px;
+    width: 90%;
+    border-radius: 20px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+td a:hover {
+    color: #555;
+}
+
+td img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 4px;
+}

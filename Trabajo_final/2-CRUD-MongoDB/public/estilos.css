@@ -1,0 +1,191 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FAF0CA;
+    color: #0D3B66;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0D3B66;
+    color: #FAF0CA;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+a {
+    color: #F95738;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: auto; /* Permite el desplazamiento horizontal en dispositivos pequeños */
+}
+
+.containerCrear {
+    width: 65%;
+    padding: 20px;
+    margin: 0 auto;
+    overflow-x: auto; /* Permite el desplazamiento horizontal en dispositivos pequeños */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #DDDDDD;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+th {
+    background-color: #0D3B66;
+    color: #FAF0CA;
+}
+
+tr:hover {
+    background-color: #F4D35E;
+}
+
+button {
+    background-color: #F95738;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #EE964B;
+}
+
+form {
+    display: inline;
+}
+
+.actions a {
+    margin-right: 10px;
+}
+
+.detalle-usuario {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-usuario p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.detalle-usuario strong {
+    color: #0D3B66;
+}
+
+.form-editar, .form-crear {
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form-editar label, .form-crear label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #0D3B66;
+}
+
+.form-editar input, .form-crear input {
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-editar input:focus, .form-crear input:focus {
+    border-color: #F4D35E;
+    outline: none;
+    box-shadow: 0 0 5px rgba(244, 211, 94, 0.5);
+}
+
+.form-editar button, .form-crear button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.botonEliminar {
+    padding: 0px;
+    color: #F95738;
+    background-color: #ffffff00;
+}
+
+.botonNuevo {
+    background-color: #F95738;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    width: 20%;
+    text-align: center;
+    margin: 20px auto 0;
+}
+
+.botonNuevo:hover {
+    background-color: #EE964B;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px 0px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .form-editar input, .form-crear input {
+        width: 90%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        min-width: 120px; /* Asegura un ancho mínimo para las celdas */
+    }
+}

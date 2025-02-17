@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul>
+                <li><a href="#">TODO</a></li>
+                <li><a href="#">MUJER</a></li>
+                <li><a href="#">HOMBRE</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon carrito">
+            <a href="/carrito"><i class="bi bi-cart"></i></a>
+        </div>
+    </header>
+
+    <section class="carrusel">
+        <button class="carruselBtn izq"><i class="bi bi-caret-left-fill"></i></button>
+        <div class="carruselImg">
+            <img src="img/portada1.jpg" alt="Imagen del carrusel" style="width: 100%;">
+        </div>
+        <button class="carruselBtn der"><i class="bi bi-caret-right-fill"></i></button>
+    </section>
+
+    <section class="contenedorProductos">
+        <% productos.forEach(producto => { %>
+            <div class="producto" data-id="producto<%= producto.id %>" data-url="/productos/<%= producto.id %>">
+                <div class="contenedorImg">
+                    <button class="productoBtn izq"><i class="bi bi-caret-left-fill"></i></button>
+                    <img src="<%= producto.imagen %>" alt="Producto 1" class="productoImg">
+                    <button class="productoBtn der"><i class="bi bi-caret-right-fill"></i></button>
+                </div>
+                <h3 class="prodTitulo"><%= producto.nombre %></h3>
+                <p class="prodDescripcion"><%= producto.detalle %></p>
+                <p class="precio"> Bs. <%= producto.precio %></p>
+                <button class="carritoBtn"><i class="bi bi-cart"></i></button>
+            </div>
+        <% }) %>
+    </section>
+
+    <a class="botonGestion" href="/productos/admin">Gestión de Productos</a>
+
+    <div id="modalCarrito" class="modal oculto">
+        <div class="modalContenedorCarrito">
+            <p>¿Deseas añadir este producto al carrito?</p>
+            <div class="botonesModal">
+                <button id="btnSi" class="botonModal">Sí</button>
+                <button id="btnNo" class="botonModal">No</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <a href="#">Contactanos</a>
+            <a href="#">Terminos y condiciones</a>
+        </div>
+        <div class="redesSociales">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        </div>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+</html>
